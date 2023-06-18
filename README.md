@@ -34,10 +34,10 @@ WeatherData.jsx: A component that displays current weather data including temper
 
 
 <h1>Signup page</h1>
-<img src="[https://i.ibb.co/pr7Cyjr/image.png](https://i.ibb.co/W0195Zc/image.png)" />
+<img src="https://i.ibb.co/W0195Zc/image.png" />
 
 <h1>Weather page</h1>
-<img src="[[https://i.ibb.co/gTzgKx5/image.png](https://i.ibb.co/NYFy1BW/image.png)](https://i.ibb.co/NYFy1BW/image.png)" />
+<img src="https://i.ibb.co/NYFy1BW/image.png" />
 
 <h1>To run this project locally, first ensure that you have Node.js and npm installed on your machine. Then, follow these steps</h1>
 
