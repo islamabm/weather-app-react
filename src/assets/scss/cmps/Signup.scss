@@ -1,0 +1,112 @@
+.signup-container {
+  margin-top: 100px;
+}
+.signup-modal {
+  background-color: #fff;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  .signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    input {
+      padding: 0.5em;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      padding: 0.5em;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1em 0;
+
+    .line {
+      flex-grow: 1;
+      height: 1px;
+      background-color: #ccc;
+    }
+
+    span {
+      padding: 0 1em;
+      color: #777;
+    }
+  }
+
+  .facebook-button {
+    width: 100%;
+    border: none;
+  }
+}
+$white: #fff;
+$google-blue: #4285f4;
+$button-active-blue: #1669f2;
+
+.google-btn {
+  width: 235px;
+  height: 42px;
+  background-color: $google-blue;
+  border-radius: 2px;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+  .google-icon-wrapper {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 1px;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: $white;
+  }
+  .google-icon {
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+  .btn-text {
+    float: right;
+    margin: 11px 11px 0 0;
+    color: $white;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    font-family: 'Roboto';
+  }
+  &:hover {
+    box-shadow: 0 0 6px $google-blue;
+  }
+  &:active {
+    background: $button-active-blue;
+  }
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:500);

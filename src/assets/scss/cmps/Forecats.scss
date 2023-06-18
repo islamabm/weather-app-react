@@ -1,0 +1,22 @@
+.forecats-container {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 10px;
+
+  .day-data {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    color: white;
+    background-color: #39cccc;
+    margin-right: 5px;
+    border-radius: 10px;
+
+    .max-temp {
+      font-size: 1em;
+    }
+    .min-temp {
+      font-size: 0.7em;
+    }
+  }
+}

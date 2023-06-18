@@ -1,0 +1,39 @@
+.choose-location-container {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+
+  img {
+    width: 70px;
+  }
+
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  input {
+    width: 150px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  .weather-btn {
+    width: 150px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPlQGiKniDjoVT-uY-4cjX3H4mdLCkHrGxEA&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 37px;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
