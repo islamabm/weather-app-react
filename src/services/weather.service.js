@@ -4,7 +4,7 @@ export const weatherService = {
 
 async function getWeatherData(city, country) {
   const response = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${process.env.REACT_APP_WEATHER_KEY}`
+    `https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&appid=${process.env.REACT_APP_WEATHER_KEY}`
   )
   if (!response.ok) {
     throw new Error(`HTTP error! status: ${response.status}`)

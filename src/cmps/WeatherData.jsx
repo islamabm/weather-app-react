@@ -38,7 +38,7 @@ export default class WeatherData extends Component {
 
   render() {
     const { name, icon, temp, speed, deg, fullWeatherData } = this.state
-    const iconUrl = `http://openweathermap.org/img/w/${icon}.png`
+    const iconUrl = `https://openweathermap.org/img/w/${icon}.png`
 
     return (
       <div className="weather-section">
@@ -64,7 +64,8 @@ export default class WeatherData extends Component {
         <div className="first-ten-results-list">
           {fullWeatherData.map((item, index) => {
             const icon = item.weather[0].icon
-            const iconUrl = `http://openweathermap.org/img/w/${icon}.png`
+            const iconUrl = `https://openweathermap.org/img/w/${icon}.png`
+
             const temp = item.main.temp - 273.15
 
             const hour = new Date(item.dt_txt).getHours()
