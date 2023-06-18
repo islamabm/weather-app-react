@@ -1,70 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Weather app
 
-## Available Scripts
 
-In the project directory, you can run:
+This React application allows users to fetch and analyze weather data to aid in event planning. The application makes use of OpenAI for advice and suggestions, weather API for weather data and Google Maps for location services.
 
-### `npm start`
+Main Features
+1-Fetch weather data based on user input (city, country)
+2-Display detailed forecast of the selected location
+3-Fetch event planning advice based on current weather and user queries
+4-Showcase weather trends on a line chart
+5-Pinpoint selected location on Google Maps with a weather-dependent icon
+6-Store weather data for later analysis and planning
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+AppHeader.jsx: Handles user input for city and country. Fetches weather data on form submit and triggers relevant event bus events.
 
-### `npm run build`
+EventPlanner.jsx: Manages the event planning modal. Uses OpenAI service to fetch event planning advice based on the user's question and current weather.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Forecast.jsx: Subscribes to the 'full-weather-data' event to receive full weather data and displays it grouped by date.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+GoogleMaps.jsx: Displays a Google Map with a marker at the selected city. The marker's icon changes based on the current temperature.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+LineChart.jsx: Shows a line chart of temperature or rain forecast using CanvasJS.
 
-### `npm run eject`
+WeatherView.jsx: Coordinates between different components. It manages the state of weatherData, which is passed to LineChart.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+WeatherData.jsx: A component that displays current weather data including temperature, wind speed and direction.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<h1>Signup page</h1>
+<img src="[https://i.ibb.co/pr7Cyjr/image.png](https://i.ibb.co/W0195Zc/image.png)" />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<h1>Weather page</h1>
+<img src="[https://i.ibb.co/gTzgKx5/image.png](https://i.ibb.co/NYFy1BW/image.png)" />
 
-### Code Splitting
+<h1>To run this project locally, first ensure that you have Node.js and npm installed on your machine. Then, follow these steps</h1>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1-Clone the repository
+git clone https://github.com/islamabm/
 
-### Analyzing the Bundle Size
+weather-app-react
+.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2-Install the required dependencies:
+npm i
+3-Start the development server:
+npm start
